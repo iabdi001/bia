@@ -1,0 +1,225 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdf4df;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #f8e3b4;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #f07b59;
+}
+
+header .logo span {
+    color: #f07b59;
+    font-weight: bold;
+}
+
+header .nav-btn {
+    background-color: #f07b59;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .nav-btn:hover {
+    background-color: #dd6a45;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #bcd4f7;
+    padding: 0 50px;
+    text-align: center;
+    color: #333;
+}
+
+.home h1 {
+    font-size: 3.5rem;
+    color: #f07b59;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.home h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.home p {
+    font-size: 1rem;
+    color: #6e6e6e;
+    margin: 10px 0 20px;
+}
+
+.home .btn {
+    background-color: #f07b59;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.home .btn:hover {
+    background-color: #dd6a45;
+}
+
+/* Services Section */
+#services {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+#services .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#services .heading span {
+    color: #f07b59;
+}
+
+.services-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.services-content .row {
+    text-align: center;
+    width: 300px;
+    background-color: #fdf4df;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.services-content .row:hover {
+    transform: scale(1.05);
+}
+
+.services-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Membership Plans */
+#plans {
+    padding: 100px 50px;
+    background-color: #fdf4df;
+    text-align: center;
+}
+
+#plans .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#plans .heading span {
+    color: #f07b59;
+}
+
+
+.plans-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.plans-content .box {
+    background-color: #f8e3b4;
+    border-radius: 10px;
+    padding: 40px; /* Slightly larger padding */
+    width: 45%; /* Covering close to half of the page width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.plans-content .box:hover {
+    transform: translateY(-10px);
+    background-color: #bcd4f7;
+}
+
+
+.plans-content .box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.plans-content .box ul {
+    list-style: none;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.plans-content .box ul li {
+    margin-bottom: 10px;
+}
+
+.plans-content .box .BOLO-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #f07b59;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.plans-content .box .BOLO-btn:hover {
+    background-color: #dd6a45;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .services-content, .plans-content {
+        flex-direction: column;
+    }
+}
